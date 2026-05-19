@@ -1,0 +1,85 @@
+<!-- Define windows like this. Remember to don't forget to put topbar and close button. And in the div of the windows make you sure you put at the end "_window" and don't forget to define in JS. -->
+        <div class="style_window" draggable="true">
+            <div class="topbar">
+                <img src="https://winaero.com/blog/wp-content/uploads/2013/10/Personalization-alt.png" width="14px" height="14px">
+                <label>Change style and performance - Control Panel</label>
+                <button class="close" onclick="styleWindow.style.display = 'none'">X</button>
+            </div>
+            <label>Style selected:</label>
+            <select class="style_list" id="style_listid">
+                <!--windows_31-me-->
+                <option value="windows_31-me">Windows 3.1 to Me</option>
+                <option value="windows_2000_classic" selected>Windows 2000 Classic (Default)</option>
+                <option value="windows_xp">Windows XP</option>
+                <option value="windows_vista_classic">Windows Vista Classic</option>
+                <option value="windows_7_aero">Windows 7 Aero</option>
+                <option value="windows_7_basic">Windows 7 Basic</option>
+                <option value="windows_7_basic_bold">Windows 7 Basic Bold</option>
+                <option value="windows_8">Windows 8 (Metro)</option>
+                <option value="windows_10-11">Windows 10 to 11</option>
+                <option value="windows_10_dll">Windows 10 DLL</option>
+                <option value="test">Test</option>
+            </select>
+            <button class="select_style">Select</button>
+            <br>
+            <label>Wallpaper selected:</label>
+            <select class="wallpaper_list" id="wallpaper_listid">
+                <optgroup label="Windows">
+                    <option value="#008080">Windows 95 to Me</option>
+                    <option value="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/45fb71b4-b618-45ed-b0ef-ddf151262ba5/dc3vx2s-1ab6fe07-36e1-4d69-be1e-b79550c90f7d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvaS80NWZiNzFiNC1iNjE4LTQ1ZWQtYjBlZi1kZGYxNTEyNjJiYTUvZGMzdngycy0xYWI2ZmUwNy0zNmUxLTRkNjktYmUxZS1iNzk1NTBjOTBmN2QucG5nIn1dXX0.uBJiqXL2A8sSHVdJn9Q974cQCZAIDWuGO5zh2MOg2C8">Windows 2000</option>
+                    <option value="https://wallpaperaccess.com/full/90278.jpg">Windows XP</option>
+                    <option value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXSO1sRh-noxM3_-TuhDuBWEpwuaxyuCYSdw&s">Windows XP x64</option>
+                    <option value="https://c4.wallpaperflare.com/wallpaper/197/17/282/windows-vista-microsoft-windows-operating-system-wallpaper-preview.jpg">Windows Vista</option>
+                    <option value="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/893f2add-0cf3-43be-ac63-5296409ee911/df7dlc5-7cbcdbb0-0651-45c2-b88b-2ccddf8c5de5.png/v1/fill/w_1280,h_800,q_80,strp/windows_vista_lock_screen_by_winvista2009_df7dlc5-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzg5M2YyYWRkLTBjZjMtNDNiZS1hYzYzLTUyOTY0MDllZTkxMS9kZjdkbGM1LTdjYmNkYmIwLTA2NTEtNDVjMi1iODhiLTJjY2RkZjhjNWRlNS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.5WLXEVujYOYk67v096j7HGkOUbbcpbFXK4xiY9g3HLg">Windows Vista Login</option>
+                    <option value="https://wallpapercave.com/wp/wp11268002.jpg">Windows Vista Setup</option>
+                    <option value="https://static.wikia.nocookie.net/wallpapers/images/7/7f/Windows7_Img0.jpg/revision/latest/scale-to-width-down/1200?cb=20240717015615">Windows 7</option>
+                    <option value="https://interworks.com/wp-content/uploads/sites/default/files/blog/u34/BLOG---Login-Screen-SS3.png" selected>Windows 7 Login/Setup (Default)</option>
+                    <option value="https://wallpapercave.com/wp/wp3468097.jpg">Windows 8</option>
+                    <option value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGA7_D93W2_QnSIG5xDrsGHPwAXlhv01m3zw&s">Windows 8.1</option>
+                    <option value="https://media.askvg.com/articles/images5/Windows_10_Hero_Wallpaper.png">Windows 10 1708 to 2004</option>
+                    <option value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDQn4cGZLYFhfAHMHtKy6rLosBSdOv4RzHjg&s">Windows 10</option>
+                    <option value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfDhQJwqhVm4c7JZpWdBgvj9eMGItrZGkDjwHNeSAgv5sZLrvajq2-oS0&s=10">Windows 11 Light</option>
+                    <option value="https://4kwallpapers.com/images/walls/thumbs_3t/5616.jpg">Windows 11 Light 4K</option>
+                    <option value="https://cdn.wallpapersafari.com/12/88/QJKnRc.jpg">Windows 11 Dark</option>
+                    <option value="#ffffff">Test</option>
+                </optgroup>
+                <optgroup label="Micellaneous">
+                    <option value="https://i.imgur.com/riCnVbe.jpeg">Come On Windows</option>
+                    <option value="https://i.imgur.com/SqlIP2C.jpeg">FlyTech</option>
+                </optgroup>
+                <optgroup label="DeviantArt">
+                    <option value="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cd2b924c-80a7-4b79-982b-87d8f947b16e/dlnpk3s-79d053c3-f5cb-4435-9332-6a2a93da10c3.png/v1/fill/w_1196,h_668,q_70,strp/cosmic_sky_meow_by_starlyssskye_dlnpk3s-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9jZDJiOTI0Yy04MGE3LTRiNzktOTgyYi04N2Q4Zjk0N2IxNmUvZGxucGszcy03OWQwNTNjMy1mNWNiLTQ0MzUtOTMzMi02YTJhOTNkYTEwYzMucG5nIiwiaGVpZ2h0IjoiPD03MTUiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiIvd20vY2QyYjkyNGMtODBhNy00Yjc5LTk4MmItODdkOGY5NDdiMTZlL3N0YXJseXNzc2t5ZS00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.UGcHjcQArlqzsmotyZnaOwj8RxUEYWkf4PoSbCt7ZNE">Cosmic Sky Meow</option>
+                    <option value="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f4e7a5a6-5bb9-4d74-badc-511a4a806c8a/dfxcn0p-3d514b39-0640-4fc8-add1-c89c5a7846c2.jpg/v1/fill/w_1192,h_671,q_70,strp/the_last_portal_by_softyrider62_dfxcn0p-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MSIsInBhdGgiOiIvZi9mNGU3YTVhNi01YmI5LTRkNzQtYmFkYy01MTFhNGE4MDZjOGEvZGZ4Y24wcC0zZDUxNGIzOS0wNjQwLTRmYzgtYWRkMS1jODljNWE3ODQ2YzIuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.-4hph5LMEBr_xy2_8knp_utIgx0NTq0pwi5BY80EeYI">The Last Portal</option>
+                    <option value="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0da6ac4f-6f72-4d38-9a1e-bce56e22938d/dluq9k7-31a0bf73-a0e0-4e5e-b2c9-c9c53dd65b9d.png/v1/fill/w_1141,h_701,q_70,strp/midsummer_magic_by_sankko_dluq9k7-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTE2OCIsInBhdGgiOiIvZi8wZGE2YWM0Zi02ZjcyLTRkMzgtOWExZS1iY2U1NmUyMjkzOGQvZGx1cTlrNy0zMWEwYmY3My1hMGUwLTRlNWUtYjJjOS1jOWM1M2RkNjViOWQucG5nIiwid2lkdGgiOiI8PTE5MDEifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.HuHFnjCA0u6fuVuvZBHoUGlnFxsSP7yGYt3EsHErXKU">Midsummer Magic</option>
+                    <option value="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0da6ac4f-6f72-4d38-9a1e-bce56e22938d/dluq9k7-31a0bf73-a0e0-4e5e-b2c9-c9c53dd65b9d.png/v1/fill/w_1141,h_701,q_70,strp/midsummer_magic_by_sankko_dluq9k7-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTE2OCIsInBhdGgiOiIvZi8wZGE2YWM0Zi02ZjcyLTRkMzgtOWExZS1iY2U1NmUyMjkzOGQvZGx1cTlrNy0zMWEwYmY3My1hMGUwLTRlNWUtYjJjOS1jOWM1M2RkNjViOWQucG5nIiwid2lkdGgiOiI8PTE5MDEifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.HuHFnjCA0u6fuVuvZBHoUGlnFxsSP7yGYt3EsHErXKU">Blep!</option>
+                    <option value="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e6d0bb8a-4114-4240-99fe-2fdffbe4836f/dlth58n-74ad73ae-5318-4329-b86f-5ad5b4eefa97.jpg/v1/fill/w_1241,h_644,q_70,strp/adoptable_auction__04__closed__by_kiakiku_dlth58n-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODMwIiwicGF0aCI6Ii9mL2U2ZDBiYjhhLTQxMTQtNDI0MC05OWZlLTJmZGZmYmU0ODM2Zi9kbHRoNThuLTc0YWQ3M2FlLTUzMTgtNDMyOS1iODZmLTVhZDViNGVlZmE5Ny5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.cMKkjpHurECl9Gxgu85gSbOGHk8bxJe5HZdbFMsWIaU">ADOPTABLE AUCTION 04 (CLOSED)</option>
+                    <option value="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7e5fb522-eef9-4015-95df-fa565da9585a/dlnt9b9-a402a7b7-7156-4fff-8785-0ca588bc7989.jpg/v1/fit/w_828,h_1170,q_70,strp/digital_portrait__by_dashamiasniankina_dlnt9b9-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTE4NSIsInBhdGgiOiIvZi83ZTVmYjUyMi1lZWY5LTQwMTUtOTVkZi1mYTU2NWRhOTU4NWEvZGxudDliOS1hNDAyYTdiNy03MTU2LTRmZmYtODc4NS0wY2E1ODhiYzc5ODkuanBnIiwid2lkdGgiOiI8PTgzOSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.fQ5obhETzbgvIY5p4PiqtUY5IiPS2Dypir_wAb1p6VM">Digital Portrait</option>
+                </optgroup>
+            </select>
+            <button class="select_wallpaper">Select</button>
+            <br>
+            <label>Or select a color:</label>
+            <input type="color" id="color_picker">
+            <button class="apply_color">Select</button>
+            <br>
+            <label>Or use a image URL:</label>
+            <input type="text" id="wallpaper_url" placeholder="https://...">
+            <button class="apply_wallpaper_url">Apply</button>
+            <br>
+            <input type="file" id="wallpaper_upload" accept="image/*">
+            <button class="apply_uploaded_wallpaper">Upload</button>
+            <label>Upload a style JSON:</label>
+            <input type="file" id="style_json_upload" accept=".json">
+            <button id="apply_style_json">Importar diseño</button>
+            <br>
+            <label>Stack windows?</label>
+            <input type="checkbox" id="stack_windows">
+            <p>&#9432;You can upload copyright content as nothing. This is an annoying restriction which doesn't exist here.</p>
+        </div>
+        <div class="example_window">
+          <div class="topbar">
+            <label>Example</label>
+            <button class="close" onclick="exampleWindow.style.display = 'none'">X</button>
+          </div>
+          <p>Example.</p>
+        </div>
